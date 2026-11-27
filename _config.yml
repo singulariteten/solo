@@ -1,8 +1,8 @@
 title: Singulariteten
 email: dustie.kaltman@proton.me
 description: Alltid vid nördkulturens händelsehorisont...
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://singulariteten.github.io/solo/" # the base hostname & protocol for your site
+baseurl: "/solo/" # the subpath of your site, e.g. /blog/
+url: "https://singulariteten.github.io" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
 
