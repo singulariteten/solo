@@ -1,7 +1,8 @@
 title: Singulariteten
 email: dustie.kaltman@proton.me
 description: Alltid vid nördkulturens händelsehorisont...
-baseurl: "/solo/" # the subpath of your site, e.g. /blog/
+lang: sv
+baseurl: "/solo" # the subpath of your site, e.g. /blog
 url: "https://singulariteten.github.io" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
@@ -13,31 +14,40 @@ highlighter: rouge
 kramdown:
     input: GFM
 
-# Social Network
-social_links: false # If true show social links
-rss: true
-facebook: 'https://www.facebook.com/Son-Link-Blog-159172270839305/?ref=your_pages'
-twitter: 'https://twitter.com/sonlink'
-github: 'https://github.com/son-link'
-
 plugins:
-- jekyll-paginate
+- jekyll-feed
 - jekyll-seo-tag
+- jekyll-paginate
 
 # Pagination
 paginate: 10
 paginate_path: "/page:num/"
 
+# jekyll-dash (https://github.com/bitbrain/jekyll-dash)
+dash:
+  # the way how dates should be displayed
+  date_format: "%Y-%m-%d"
+
+  # whether the author box should be displayed or not
+  show_author: true
+
+  # avatar in the author box: "github" (github_username) or "local" (avatar_path)
+  avatar_source: github
+  github_username: singulariteten
+
+  # the animation speed of the post description typing effect
+  animation_speed: 50
+
+  rtl: false
+
+  # links in the header, e.g.
+  # social_links:
+  #   - url: https://github.com/singulariteten
+  #     icon: github-square
+  #     color: purple
 
 exclude:
   - vendor
-  - screenshot.png
-  - thumbnail.png
-  - '*.gem*'
-  - icons.js
-  - config_fontello.json
-
-credits: |
-  jekyll-dark-ored &copy; 2019 Alfonso Saavedra "Son Link"<br />
-  This theme and <a href="https://son-link.github.io/microcss/" target="_black">microcss</a> is under the GNU/GPL 3 or newer license.<br />
-  Powered by Jekyll.
+  - Gemfile
+  - Gemfile.lock
+  - README.md
