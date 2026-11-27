@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Önskelista"
 date: 2026-11-27
 ---
